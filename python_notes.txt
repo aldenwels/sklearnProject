@@ -1,0 +1,42 @@
+You will need to import several Python packages: pandas, sklearn, matplotlib. You can use pip or ports if you have those installed. Make sure to use pip3 if you are using Python 3.
+
+String concatenation: you can use the + operator. Better, use .format()
+
+print "{} {} is {} years ".format(fname, lname, age)
+
+http://www.pythonforbeginners.com/concatenation/string-concatenation-and-formatting-in-python
+
+A python tuple is defined by putting comma-separated values in parentheses. A list is the same thing in brackets. You can iterate over either one like this:
+
+for item in tuple:
+
+for item in (1, 3, 6, 8):
+
+http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/loops.html
+
+Be very careful with indentation in python, that is what determines blocks instead of curly brackets.
+
+http://www.diveintopython.net/getting_to_know_python/indenting_code.html
+
+plotting: http://scikit-learn.org/stable/auto_examples/svm/plot_iris.html
+
+Pandas is a package that is very useful for handling data. You can use it to read in a csv
+
+chessdata = pandas.read_csv("chessdata.csv")
+
+You can access individual columns and groups of columns by name:
+
+X = chessdata[['A','B']]
+y = chessdata['label']
+
+or by number:
+
+X = chessdata.iloc[:,0:2]
+y = chessdata.iloc[:,2]
+
+http://pandas.pydata.org/pandas-docs/stable/indexing.html
+
+Sklearn classifiers:
+http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier
+http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC
+http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier
